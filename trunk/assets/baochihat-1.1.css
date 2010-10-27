@@ -1,0 +1,89 @@
+body {
+	background: #c4336e url(http://sphotos.ak.fbcdn.net/hphotos-ak-ash2/hs148.ash2/40729_121563637900332_120027548053941_135331_3928669_n.jpg) no-repeat center top;
+	font-family: Verdana, Arial;
+	text-align: center; /* for IE */
+}
+#feed {
+	width: 810px;
+	margin: 550px auto 0 auto;
+	display: block;
+	text-align: center;
+}
+	#feed:after {
+		content:"\0020";
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+		overflow:hidden;
+	}
+	#feed .feed-viewer {
+		display: none;
+	}
+	#feed a {
+		position: relative;
+		text-decoration: none;
+		vertical-align: bottom;
+		margin: 5px 5px 0 0;
+		padding: 0;
+		display: block;
+		float: left;
+	}
+	#feed a span {
+		display: none;
+		font-weight: bold;
+		font-size: 0.8em;
+		text-align: right;
+		opacity: .5;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);
+		border-top-right-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		background-color: #a51e55;
+		color: #FFF;
+		padding: 3px 5px 3px 7px;
+ 	}
+	#feed a:hover span {
+		position: absolute;
+		bottom: 3px;
+		left: 0;
+		display: block;
+	}
+	.feed-text-content {
+		color: #FFF;
+		font-size: 7.3px;
+		text-align: left;
+		overflow: hidden;
+	}
+		.feed-official .feed-text-content {
+			font-size: 11px !important;
+		}
+		.feed-text-content .avatar {
+			float: left;
+			margin: 0 2px 2px 0;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			border: 1px solid #a51e55;
+		}
+		.feed-text-content  blockquote {
+			padding: 5px;
+			margin: 0;
+		}
+.thumb {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 3px solid #a51e55;
+	display: block;
+}
+#footer {
+	text-align: center;
+	font-size: 0.7em;
+	color: #FFF;
+}
+	#footer a {
+		color: #FFF;
+		text-decoration: none;
+	}
+.muted, .muted a {
+	color: #e06296 !important;
+}
